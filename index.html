@@ -13,7 +13,7 @@
     <link rel="icon" href="https://i.postimg.cc/NjnShwNK/20211115-202638-modified.png" type="image/png">
     <title>Ramiz</title>
     <style>
-        /* Applied Date Stamp font */
+        
         @import url('https://fonts.googleapis.com/css2?family=Date+Stamp&display=swap');
 
         body {
@@ -96,7 +96,7 @@
     </div>
 
     <script>
-        // Function to play the game
+    
         function playGame() {
             var randomNumber = Math.floor(Math.random() * 2) + 1; // Changed to 2 for two possible outcomes
             var result = "";
@@ -108,7 +108,7 @@
             document.getElementById("gameResult").textContent = result;
         }
 
-        // Function to fetch and display a random Wikipedia article
+        
         function getRandomWikipediaArticle() {
             fetch("https://en.wikipedia.org/api/rest_v1/page/random/summary")
                 .then(response => response.json())
@@ -120,7 +120,7 @@
                 .catch(error => console.error("Error fetching Wikipedia article:", error));
         }
 
-        // Call the function to get a random Wikipedia article
+        
         getRandomWikipediaArticle();
     </script>
 </body>
